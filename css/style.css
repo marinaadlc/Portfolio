@@ -9,9 +9,12 @@ h1,h2,h3,h4,p,a,button,input,textarea{
 p,a,button,.button{
     letter-spacing: 0.1em;
 }
-body{
+html,body,main{
     margin:0;
     padding:0;
+}
+main{
+    overflow:hidden;
 }
 button,.button{
     background-color: var(--color-texto);
@@ -24,6 +27,9 @@ button,.button{
     letter-spacing: 0.15em;
     padding:15px 30px;
 }
+button:active{
+    border:none;
+}
 @media(min-width:700px){
     button,.button{
     font-size:23px;
@@ -33,7 +39,7 @@ button,.button{
 }
 
 .hidden{
-    display:none;
+    display:none !important;
 }
 
 
@@ -43,41 +49,75 @@ head{
     top:0;
     text-align: center;
 }
-    nav ul{
-        display:none;
+    .nav-bar{
+        list-style-type: none;
     }
     nav a{
         font-size: 1.5rem;
         text-decoration: none;
         color:var(--color-texto);
     }
-    .nav-burger-button{
+    #nav-burger-button{
         background-color:rgba(0, 0, 0, 0);
         box-shadow: none;
         height:50px;
         position:absolute;
         top:0;
         right:0;
+        z-index:3;
     }
+#landing-nav #logo{
+        display:none;
+    }
+    #logo{
+        position:absolute;
+        top:25px;
+        left:50px;
+    }
+    #logo a{
+        font-size:2em;
+        font-weight:700;
+    }
+    .nav-phone-view{
+        height:100vh;
+        width:100vw;
+        position:absolute;
+        top:0;
+        left:0;
+        margin:0;
+        padding:0;
+        background-color: var(--color-texto);
+        z-index:2;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .nav-phone-view li{
+            margin:30px;
+        }
+        .nav-phone-view a{
+        color:white;
+        }
 @media(min-width:700px){
     nav ul{
         list-style-type: none;
         display:flex;
         align-items: center;
         justify-content: space-between;
-        height:50px;
+        height:80px;
         width:500px;
         margin:auto;
     }
-    .nav-burger-button{
+    #nav-burger-button{
         display:none;
     }
 }
 
 #hero-section{
     height: 100vh;
-    width:100vw;
-    overflow:hidden;
+    width:100%;
+    overflow:hidden ;
 }
     h1{
         font-size: 30vw;
@@ -94,7 +134,7 @@ head{
         left:50vw;
         top:50vh;
         transform: translate(-50%);
-        font-size: 8vw;
+        font-size: 7vw;
         text-shadow: var(--text-shadow);
     }
     #cara-izd{
@@ -112,6 +152,9 @@ head{
         z-index: -1;
     }
 @media(min-width:700px){
+    #hero-section{
+        width:100vw;
+    }
     h1{
         font-size: 25vw;
         font-weight: 800;
@@ -174,7 +217,7 @@ head{
     margin-top:-30px;
 }
 #herram-section svg{
-    width:100vw;
+    width:100%;
 }  
     #herram-transition-shape{
         margin-bottom:-5px;
@@ -204,6 +247,9 @@ head{
         align-items: center;
         justify-content: space-around;
     }
+        .tarjeta svg{
+            max-width:200px;
+        }
         .tarjeta h4{
             font-size:1.5rem;
             font-weight:800;
@@ -322,6 +368,7 @@ footer{
     background-color:#FFD11C;
     padding:60px 80px 60px;
     text-align: center;
+    margin:0;
 }
     footer p{
         text-align: center;
