@@ -39,9 +39,14 @@ button:active{
 }
 
 .hidden{
-    display:none !important;
+    display:none;
 }
-
+.hide-up{
+    transform:translateY(-100vh);
+}
+.fixed {
+    position: fixed;
+  }
 
 head{
     position:absolute;
@@ -49,74 +54,88 @@ head{
     top:0;
     text-align: center;
 }
-    .nav-bar{
-        list-style-type: none;
-    }
-    nav a{
-        font-size: 1.5rem;
-        text-decoration: none;
-        color:var(--color-texto);
-    }
-    #nav-burger-button{
-        background-color:rgba(0, 0, 0, 0);
-        box-shadow: none;
-        height:50px;
-        position:absolute;
-        top:0;
-        right:0;
-        z-index:3;
-    }
-#landing-nav #logo{
+    #desktop-nav{
         display:none;
     }
-    #logo{
-        position:absolute;
-        top:25px;
-        left:50px;
-    }
-    #logo a{
-        font-size:2em;
-        font-weight:700;
-    }
-    .nav-phone-view{
-        height:100vh;
-        width:100vw;
+    #phone-nav{
         position:absolute;
         top:0;
         left:0;
-        margin:0;
-        padding:0;
-        background-color: var(--color-texto);
-        z-index:2;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
-        .nav-phone-view li{
-            margin:30px;
-        }
-        .nav-phone-view a{
-        color:white;
-        }
-@media(min-width:700px){
-    nav ul{
+    .nav-bar{
         list-style-type: none;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        height:80px;
-        width:500px;
-        margin:auto;
     }
+        #phone-nav .nav-bar{
+            width:100vw;
+            height:100vh;
+            margin:0;
+            padding:0;
+            z-index:5;
+            position:relative;
+            background-color:var(--color-texto);
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #phone-nav li{
+            margin:30px auto;
+        }
+            #phone-nav li a{
+                font-size: 1.5rem;
+            } 
+        #phone-nav #logo{
+            position:absolute;
+            top:-5px;
+            left:20px;
+        }
+            #phone-nav #logo a{
+                font-size:2em;
+                font-weight:700;
+            }
+        #phone-nav a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color:white;
+        }
     #nav-burger-button{
+        height:50px;
+        position:absolute;
+        top:5px;
+        right:0;
+        z-index:10;
+        background-color:rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+@media(min-width:700px){
+    #desktop-nav{
+        width:100vw;
+        display:initial;
+        box-sizing: border-box;
+    }
+    #desktop-nav .nav-bar{
+        height:50px;
+        width:70%;
+        margin:20px auto 0;
+        display:flex;
+        justify-content: space-between;
+    }
+        #desktop-nav #landing-nav #logo{
+            display:none;
+        }
+    #nav-burger-button, #phone-nav{
         display:none;
     }
 }
+        #desktop-nav a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color:var(--color-texto);
+        }
 
 #hero-section{
     height: 100vh;
-    width:100%;
+    width:100vw;
     overflow:hidden ;
 }
     h1{
@@ -142,6 +161,7 @@ head{
         top:-17%;
         left:-15%;
         transform: rotate(5deg);
+        overflow: hidden;
         z-index: -1;
     }
     #cara-dch{
