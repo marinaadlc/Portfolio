@@ -116,6 +116,7 @@ head{
     #desktop-nav .nav-bar{
         height:50px;
         width:70%;
+        max-width:850px;
         margin:20px auto 0;
         display:flex;
         justify-content: space-between;
