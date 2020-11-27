@@ -124,6 +124,16 @@ head{
         #desktop-nav #landing-nav #logo{
             display:none;
         }
+        #desktop-nav #other-nav #logo{
+            display:initial;
+            position:absolute;
+            top:15px;
+            left:20px;
+        }
+        #desktop-nav #other-nav #logo a{
+            font-size:2em;
+            font-weight:700;
+        }
     #nav-burger-button, #phone-nav{
         display:none;
     }
@@ -443,7 +453,7 @@ footer{
         .footer-links svg{
             margin:auto 5px;
         }
-@media(min-width:700px){
+@media(min-width:1000px){
     footer p{
         margin-bottom:40px;
         font-size: 2rem;
