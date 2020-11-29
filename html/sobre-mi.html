@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <nav id="desktop-nav">
-            <ul class="nav-bar" id="other-nav">
-                <li id="logo">
+        <nav class="desktop-nav">
+            <ul class="nav-bar other-nav" >
+                <li class="logo">
                     <a href="index.html">sigler</a>
                 </li>
                 <li>
@@ -27,9 +28,9 @@
                 </li>
             </ul>
         </nav>
-        <nav id="phone-nav">
-            <ul class="nav-bar hide-up" id="landing-nav">
-                <li id="logo">
+        <nav class="phone-nav">
+            <ul class="nav-bar hide-up landing-nav" >
+                <li class="logo">
                     <a href="index.html">sigler</a>
                 </li>
                 <li>
@@ -42,18 +43,28 @@
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
-            <button id="nav-burger-button">
-                <svg id="burger-icon" viewBox="0 0 100 80" width="35" height="35" fill="#252525">
+            <button class="nav-burger-button">
+                <svg class="burger-icon" viewBox="0 0 100 80" width="35" height="35" fill="#252525">
                     <rect width="100" height="20" rx="8" ></rect>
                     <rect y="34" width="100" height="20" rx="8"></rect>
                     <rect y="67" width="100" height="20" rx="8"></rect>
                   </svg>
-                  <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="41" height="40" fill="none" viewBox="0 0 41 40">
+                  <svg id="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="41" height="40" fill="none" viewBox="0 0 41 40">
                     <path fill="#fff" fill-rule="evenodd" d="M1.752 31.945a3 3 0 000 4.243l2.56 2.56a3 3 0 004.243 0l11.65-11.65 11.781 11.78a3 3 0 004.243 0l2.56-2.56a3 3 0 000-4.242L27.008 20.295 39.46 7.843a3 3 0 000-4.243L36.9 1.04a3 3 0 00-4.243 0L20.205 13.492 7.884 1.171a3 3 0 00-4.243 0l-2.56 2.56a3 3 0 000 4.242l12.321 12.322-11.65 11.65z" clip-rule="evenodd"/>
                   </svg>
             </button>
         </nav>
     </header> 
+    <main class="sobre-mi-main">
+        <h1 class="page-header">Sobre mí</h1>
+        <p class="sobre-mi">Soy Marina. Diseñadora, desarrolladora y apasionada de la experiencia de usuario.<br><br>
+            Mi camino empezó en el diseño industrial y mi pasión por crear productos para el usuario fue acercándome al mundo digital. <br><br>
+            Tengo por costumbre huir de mi zona de confort, explorando cualquier campo que pueda aportar a mi trabajo y me ayude a construir perfil multidisciplinar, capaz de aportar perspectivas innovadoras en mis equipos de trabajo.<br><br>
+            Ahora estoy buscando mi siguiente proyecto, que pueda ayudarme a seguir creciendo como profesional. </p>
+        <svg class="downside-girl" xmlns="http://www.w3.org/2000/svg" width="104" height="247" fill="none" viewBox="0 0 104 247">
+            <path fill="#FFD11C" stroke="#FFD600" stroke-width="1.224" d="M7.762 80.905c-1.265 1.02-2.372 1.223-3.367 1.1-6.916-.853-1.325-10.376 3.707-18.65 1.766-2.907 2.985-5.523 3.962-7.62 1.691-3.63 2.656-5.7 4.474-5.02.985.37 1.577 1.556 1.804 3.287C28.895 42.858 11.04 1 11.04 1h81.917s-17.855 41.858-7.3 53.002c.226-1.731.818-2.916 1.803-3.286 1.817-.681 2.781 1.388 4.471 5.015.977 2.097 2.197 4.716 3.965 7.624 5.03 8.274 10.624 17.797 3.709 18.65-.996.123-2.104-.08-3.37-1.1.542 3.524.834 7.159.834 10.882 0 31.391-9.533 58.331-45.07 58.527a66.03 66.03 0 01-2.336-.053 2.95 2.95 0 01-2.943 3.146h-.93c-.418 9.508 2.674 13.761 5.306 17.379.803 1.105 1.563 2.151 2.168 3.269.866 1.602 3.735 4.052 7.491 7.259 8.007 6.837 20.042 17.114 25.285 29.942 6.161 15.076-27.368 29.661-44.903 35.069 5.736-5.571 17.174-19.009 17.043-28.187-.079-5.524-5.174-10.631-10.858-16.326-6.118-6.13-12.916-12.943-14.87-21.693-1.871-8.378 2.006-18.492 6.733-26.712h-.004a2.95 2.95 0 01-2.048-5.073c-23.43-6.776-30.207-30.079-30.207-56.547 0-3.724.293-7.358.835-10.882z"/>
+        </svg>
+    </main>
     <footer>
         <p>Contacta conmigo!</p>
         <form action="">

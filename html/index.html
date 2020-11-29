@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <nav id="desktop-nav">
+        <nav class="desktop-nav">
             <ul class="nav-bar" id="landing-nav">
-                <li id="logo">
+                <li class="logo">
                     <a href="index.html">sigler</a>
                 </li>
                 <li>
@@ -28,9 +29,9 @@
                 </li>
             </ul>
         </nav>
-        <nav id="phone-nav">
-            <ul class="nav-bar hide-up" id="landing-nav">
-                <li id="logo">
+        <nav class="phone-nav">
+            <ul class="nav-bar hide-up landing-nav" >
+                <li class="logo">
                     <a href="index.html">sigler</a>
                 </li>
                 <li>
@@ -43,13 +44,13 @@
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
-            <button id="nav-burger-button">
-                <svg id="burger-icon" viewBox="0 0 100 80" width="35" height="35" fill="#252525">
+            <button class="nav-burger-button">
+                <svg class="burger-icon" viewBox="0 0 100 80" width="35" height="35" fill="#252525">
                     <rect width="100" height="20" rx="8" ></rect>
                     <rect y="34" width="100" height="20" rx="8"></rect>
                     <rect y="67" width="100" height="20" rx="8"></rect>
                   </svg>
-                  <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="41" height="40" fill="none" viewBox="0 0 41 40">
+                  <svg id="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="41" height="40" fill="none" viewBox="0 0 41 40">
                     <path fill="#fff" fill-rule="evenodd" d="M1.752 31.945a3 3 0 000 4.243l2.56 2.56a3 3 0 004.243 0l11.65-11.65 11.781 11.78a3 3 0 004.243 0l2.56-2.56a3 3 0 000-4.242L27.008 20.295 39.46 7.843a3 3 0 000-4.243L36.9 1.04a3 3 0 00-4.243 0L20.205 13.492 7.884 1.171a3 3 0 00-4.243 0l-2.56 2.56a3 3 0 000 4.242l12.321 12.322-11.65 11.65z" clip-rule="evenodd"/>
                   </svg>
             </button>
@@ -57,7 +58,7 @@
     </header> 
     <main>
     <section id="hero-section">
-        <h1>sigler</h1>
+        <h1 class="sigler-header">sigler</h1>
         <h2 id="subtitle">Creativa web</h2>
         <svg id="cara-izd" xmlns="http://www.w3.org/2000/svg" width="331" height="378" fill="none" viewBox="0 0 331 378">
             <path fill="#FFD11C" fill-rule="evenodd" d="M291 98.423c7.633-17.388 19.963-45.475 16.138-82.307-.159-1.482 4.229-2.133 7.83-2.668 1.249-.185 2.403-.357 3.241-.543 5.327-1.437 9.495-6.034 12.553-12.905H0v333.18c2.011-1.417 4.1-2.835 6.27-4.254.496-.324 1.086-.728 1.758-1.188 7.712-5.278 26.357-18.037 40.881-5.092 2.621 2.339 5.372 4.854 8.238 7.475 23.53 21.514 54.882 50.18 86.321 47.371 30.315-2.749 36.655-19.717 44.385-40.405 2.378-6.366 4.889-13.085 8.269-19.849 19.336 2.836 27.273-9.688 25.106-27.698l17.802-3.956c7.754-17.262 6.676-21.46 5.392-26.459-.874-3.403-1.844-7.178-.187-15.7 1.059-5.407 8.147-5.639 16.792-5.923 13.267-.435 30.203-.991 34.639-20.556 2.919-12.868-1.293-39.026-5.176-63.145-2.421-15.032-4.713-29.272-5.073-39.007-.128-3.362 2.291-8.871 5.583-16.37z" clip-rule="evenodd"/>
