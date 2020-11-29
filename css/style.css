@@ -238,7 +238,7 @@ footer{
     footer textarea{
         flex:1;
     }
-    footer form input:nth-of-type(2){
+    footer form input:nth-of-type(3){
         width:200px;
         padding-left: auto;
         font-weight:700;
@@ -696,5 +696,29 @@ footer{
         grid-area: d;
     }
 }
-
-         
+/* ----------------------------SUCCESS--------------------------*/
+.success-main{
+    text-align: center;
+}
+    .success-main #foto-perfil{
+        width:60%;
+        max-width:250px;
+        margin:120px auto 0;
+    }
+    .success-main p{
+        font-size:1.1rem;
+        font-weight: 600;
+        width:80%;
+        margin:20px auto;
+    }
+.success-footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+@media screen and (min-width:700px){
+    .success-main #foto-perfil{
+        margin:60px auto 0;
+    }
+}
