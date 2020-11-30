@@ -57,26 +57,24 @@
     </header> 
     <main>
         <h1 class="page-header">Contacto</h1>
-        <form class="contact-form" action="">
+        <form class="contact-form" action="https://mailthis.to/marinasigler" method="POST" encType="multipart/form-data">
             <div class="grid-container">
                 <div class="label-input-container">
                     <label for="email">Email</label>
-                    <input name="email" class="contact-input" id="email" type="email" placeholder="Email">
+                    <input name="_replyto" class="contact-input" id="email" type="email" placeholder="Email" required>
                 </div>
                 <div class="label-input-container">
                     <label for="nombre">Nombre</label>
-                    <input name="nombre" class="contact-input" id="nombre" type="text" placeholder="Nombre">
-                </div>
-                <div class="label-input-container">
-                    <label for="apellidos">Apellidos</label>
-                    <input name="apellidos" class="contact-input" id="apellidos" type="text" placeholder="Apellidos">
+                    <input name="nombre" class="contact-input" id="nombre" type="text" placeholder="Nombre" required>
                 </div>
                 <div class="label-input-container">
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" class="contact-input" id="mensaje" placeholder="Mensaje"></textarea> 
+                    <textarea name="message" class="contact-input" id="mensaje" placeholder="Mensaje" required></textarea> 
                 </div>
             </div>
-            <input class="button" type="submit" value="Enviar">
+            <input class="button" type="submit" value="Send">
+            <input type="hidden" name="_honeypot" value="">
+            <input type="hidden" name="_confirmation" value="Mensaje enviado">
         </form>
     </main>
     <footer>

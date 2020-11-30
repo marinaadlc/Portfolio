@@ -57,10 +57,12 @@
     </header> 
     <footer>
         <p>Contacta conmigo!</p>
-        <form action="">
-            <input name="email" type="email" placeholder="Email">
-            <textarea name="mensaje" placeholder="Mensaje"></textarea> 
-            <input class="button" type="submit" value="Enviar">
+        <form action="https://mailthis.to/marinasigler" method="POST" encType="multipart/form-data">
+            <input name="_replyto" type="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <input class="button" type="submit" value="Send">
+            <input type="hidden" name="_honeypot" value="">
+            <input type="hidden" name="_confirmation" value="Mensaje enviado">
         </form>
         <div class="footer-links">
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="none" viewBox="0 0 55 55">

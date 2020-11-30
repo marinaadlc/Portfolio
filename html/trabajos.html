@@ -57,37 +57,28 @@
     </header> 
     <main>
         <h1 class="page-header">Trabajos</h1>
-        <div class="custom-select">
-            <form id="phone-works-form" action="">
-                <select id="phone-works-select" name="works-select" id="phone-works-type">
-                    <option value="todos">Todos</option>
-                    <option value="desarrollo-web">Desarrollo Web</option>
-                    <option value="diseño">Diseño</option>
-                    <option value="cad">CAD</option>
-                </select>
-            </form>
-        </div>
-        <form class="desktop-custom-select" action="">
+        <form class="custom-select" action="">
             <div>
                 <input type="radio" name="works-select" value="todos" id="todos" checked>
-                <label class="desktop-works-select" for="todos">Todos</label>
+                <label class="works-select" for="todos">Todos</label>
             </div>
             <div>
                 <input type="radio" name="works-select" value="desarrollo-web" id="desarrollo-web">
-                <label class="desktop-works-select" for="desarrollo-web">Desarrollo Web</label>
+                <label class="works-select" for="desarrollo-web">Desarrollo Web</label>
             </div>
+            <div class="separator"></div>
             <div>
                 <input type="radio" name="works-select" value="diseño" id="diseño">
-                <label class="desktop-works-select" for="diseño">Diseño</label>
+                <label class="works-select" for="diseño">Diseño</label>
             </div>
             <div>
                 <input type="radio" name="works-select" value="cad" id="cad">
-                <label class="desktop-works-select" for="cad">CAD</label>
+                <label class="works-select" for="cad">CAD</label>
             </div>   
         </form>
         <div class="trabajos-container trabajos-extended">
-            <article class="mini-trabajo">
-                <img src="../assets/img/miniaturaTrabajo1.png" alt="Trabajo lase-o">
+            <article class="mini-trabajo desarrollo-web">
+                <img src="../assets/img/miniaturaTrabajo1.png" alt="Trabajo food-blog">
                 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="132" fill="none" viewBox="0 0 320 132" class="white-decor">
                     <path fill="#FCFCFC" d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"/>
                   </svg>
@@ -95,12 +86,12 @@
                     <path fill="#FFD11C" d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"/>
                   </svg>
                 <div class="mini-trabajo-nombre">
-                    <h4>cook in a rush</h4>
+                    <h4>Cook in a rush</h4>
                     <p>Desarrollo web</p>
                 </div>
             </article>
-            <article class="mini-trabajo">
-                <img src="../assets/img/miniaturaTrabajo1.png" alt="Trabajo lase-o">
+            <article class="mini-trabajo cad">
+                <img src="../assets/img/miniaturaTrabajo2.png" alt="Trabajo lase-o">
                 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="132" fill="none" viewBox="0 0 320 132" class="white-decor">
                     <path fill="#FCFCFC" d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"/>
                   </svg>
@@ -108,12 +99,25 @@
                     <path fill="#FFD11C" d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"/>
                   </svg>
                 <div class="mini-trabajo-nombre">
-                    <h4>cook in a rush</h4>
+                    <h4>Lase-o</h4>
+                    <p>Diseño y render<br>de producto</p>
+                </div>
+            </article>
+            <article class="mini-trabajo desarrollo-web">
+                <img src="../assets/img/miniaturaTrabajo3.png" alt="Trabajo Bravo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="132" fill="none" viewBox="0 0 320 132" class="white-decor">
+                    <path fill="#FCFCFC" d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"/>
+                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="351" height="132" fill="none" viewBox="0 0 351 132" class="yellow-decor">
+                    <path fill="#FFD11C" d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"/>
+                  </svg>
+                <div class="mini-trabajo-nombre">
+                    <h4>Bravo</h4>
                     <p>Desarrollo web</p>
                 </div>
             </article>
-            <article class="mini-trabajo">
-                <img src="../assets/img/miniaturaTrabajo1.png" alt="Trabajo lase-o">
+            <article class="mini-trabajo cad">
+                <img src="../assets/img/miniaturaTrabajo4.png" alt="Trabajo e-Trike">
                 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="132" fill="none" viewBox="0 0 320 132" class="white-decor">
                     <path fill="#FCFCFC" d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"/>
                   </svg>
@@ -121,12 +125,12 @@
                     <path fill="#FFD11C" d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"/>
                   </svg>
                 <div class="mini-trabajo-nombre">
-                    <h4>cook in a rush</h4>
-                    <p>Desarrollo web</p>
+                    <h4>e-Trike</h4>
+                    <p>Diseño y render<br>de producto</p>
                 </div>
             </article>
-            <article class="mini-trabajo">
-                <img src="../assets/img/miniaturaTrabajo1.png" alt="Trabajo lase-o">
+            <article class="mini-trabajo diseño">
+                <img src="../assets/img/miniaturaTrabajo5.png" alt="Trabajo Fenix">
                 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="132" fill="none" viewBox="0 0 320 132" class="white-decor">
                     <path fill="#FCFCFC" d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"/>
                   </svg>
@@ -134,19 +138,33 @@
                     <path fill="#FFD11C" d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"/>
                   </svg>
                 <div class="mini-trabajo-nombre">
-                    <h4>cook in a rush</h4>
-                    <p>Desarrollo web</p>
+                    <h4>Fénix</h4>
+                    <p>Diseño de marca</p>
+                </div>
+            </article>
+            <article class="mini-trabajo diseño desarrollo-web">
+                <img src="../assets/img/miniaturaTrabajo6.png" alt="Trabajo DailyUI">
+                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="132" fill="none" viewBox="0 0 320 132" class="white-decor">
+                    <path fill="#FCFCFC" d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"/>
+                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="351" height="132" fill="none" viewBox="0 0 351 132" class="yellow-decor">
+                    <path fill="#FFD11C" d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"/>
+                  </svg>
+                <div class="mini-trabajo-nombre">
+                    <h4>DailyUI</h4>
+                    <p>Diseño y<br>desarrollo web</p>
                 </div>
             </article>
         </div>
-
     </main>
     <footer>
         <p>Contacta conmigo!</p>
-        <form action="">
-            <input name="email" type="email" placeholder="Email">
-            <textarea name="mensaje" placeholder="Mensaje"></textarea> 
-            <input class="button" type="submit" value="Enviar">
+        <form action="https://mailthis.to/marinasigler" method="POST" encType="multipart/form-data">
+            <input name="_replyto" type="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <input class="button" type="submit" value="Send">
+            <input type="hidden" name="_honeypot" value="">
+            <input type="hidden" name="_confirmation" value="Mensaje enviado">
         </form>
         <div class="footer-links">
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="none" viewBox="0 0 55 55">
