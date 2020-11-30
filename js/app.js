@@ -18,7 +18,30 @@ function menuToggle(){
 burger.addEventListener('click',menuToggle);
 
 /* Work filter */
-filterSelection("todos")
+var filterOg = "todos";
+function filterSelection(filter){
+ var works = document.getElementsByClassName("mini-trabajo");
+ if(filter!==filterOg && filter!=="todos"){
+   var showEls = document.getElementsByClassName(filter);
+   for (i=0; i<works.length; i++){
+     works[i].classList.add("hidden");
+   };
+   for (i=0; i<showEls.length; i++){
+     showEls[i].classList.remove("hidden");
+   }
+ }
+ if (filter=="todos"){
+   for (i=0;i<works.length; i++){
+     works[i].classList.remove("hidden");
+   }
+ }
+}
+
+
+
+
+
+/* filterSelection("todos")
 function filterSelection(filter){
     var x,i;
     x = document.getElementsByClassName("works-select");
@@ -55,4 +78,4 @@ for (var i = 0; i < selectors.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+} */
