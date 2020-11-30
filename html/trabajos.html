@@ -58,20 +58,20 @@
     <main>
         <h1 class="page-header">Trabajos</h1>
         <form class="custom-select" action="">
-            <div>
+            <div onclick="filterSelection('todos')">
                 <input type="radio" name="works-select" value="todos" id="todos" checked>
                 <label class="works-select" for="todos">Todos</label>
             </div>
-            <div>
+            <div onclick="filterSelection('desarrollo-web')">
                 <input type="radio" name="works-select" value="desarrollo-web" id="desarrollo-web">
                 <label class="works-select" for="desarrollo-web">Desarrollo Web</label>
             </div>
             <div class="separator"></div>
-            <div>
+            <div onclick="filterSelection('diseño')">
                 <input type="radio" name="works-select" value="diseño" id="diseño">
                 <label class="works-select" for="diseño">Diseño</label>
             </div>
-            <div>
+            <div onclick="filterSelection('cad')">
                 <input type="radio" name="works-select" value="cad" id="cad">
                 <label class="works-select" for="cad">CAD</label>
             </div>   

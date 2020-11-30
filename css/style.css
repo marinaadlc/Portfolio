@@ -70,6 +70,9 @@ textarea{
     display:none !important;
     z-index:-10;
 }
+.show {
+    display: block;
+  }
 .hide-up{
     transform:translateY(-100vh);
 }
@@ -563,7 +566,7 @@ footer{
     color:white;
     transition: color 0.2s ease;
 }
-.custom-select input:checked + label{
+.custom-select input:checked + label, .active{
     font-weight: 600;
     font-size: 1.1rem;
 }
