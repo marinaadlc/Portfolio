@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
+    />
+    <title>Sigler</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="desktop-nav">
+        <ul class="nav-bar landing-nav">
+          <li class="logo">
+            <a href="./index.html">sigler</a>
+          </li>
+          <li>
+            <a href="./html/sobre-mi.html">Sobre mí</a>
+          </li>
+          <li>
+            <a href="./html/trabajos.html">Trabajos</a>
+          </li>
+          <li>
+            <a href="./html/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="phone-nav">
+        <ul class="nav-bar hide-up landing-nav">
+          <li class="logo">
+            <a href="./index.html">sigler</a>
+          </li>
+          <li>
+            <a href="./html/sobre-mi.html">Sobre mí</a>
+          </li>
+          <li>
+            <a href="./html/trabajos.html">Trabajos</a>
+          </li>
+          <li>
+            <a href="./html/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <button class="nav-burger-button">
+          <svg
+            class="burger-icon"
+            viewBox="0 0 100 80"
+            width="35"
+            height="35"
+            fill="#252525"
+          >
+            <rect width="100" height="20" rx="8"></rect>
+            <rect y="34" width="100" height="20" rx="8"></rect>
+            <rect y="67" width="100" height="20" rx="8"></rect>
+          </svg>
+          <svg
+            class="close-icon hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            width="41"
+            height="40"
+            fill="none"
+            viewBox="0 0 41 40"
+          >
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M1.752 31.945a3 3 0 000 4.243l2.56 2.56a3 3 0 004.243 0l11.65-11.65 11.781 11.78a3 3 0 004.243 0l2.56-2.56a3 3 0 000-4.242L27.008 20.295 39.46 7.843a3 3 0 000-4.243L36.9 1.04a3 3 0 00-4.243 0L20.205 13.492 7.884 1.171a3 3 0 00-4.243 0l-2.56 2.56a3 3 0 000 4.242l12.321 12.322-11.65 11.65z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section">
+        <h1 class="sigler-header">sigler</h1>
+        <h2 id="subtitle">Creativa web</h2>
+        <svg
+          id="cara-izd"
+          xmlns="http://www.w3.org/2000/svg"
+          width="331"
+          height="378"
+          fill="none"
+          viewBox="0 0 331 378"
+        >
+          <path
+            fill="#FFD11C"
+            fill-rule="evenodd"
+            d="M291 98.423c7.633-17.388 19.963-45.475 16.138-82.307-.159-1.482 4.229-2.133 7.83-2.668 1.249-.185 2.403-.357 3.241-.543 5.327-1.437 9.495-6.034 12.553-12.905H0v333.18c2.011-1.417 4.1-2.835 6.27-4.254.496-.324 1.086-.728 1.758-1.188 7.712-5.278 26.357-18.037 40.881-5.092 2.621 2.339 5.372 4.854 8.238 7.475 23.53 21.514 54.882 50.18 86.321 47.371 30.315-2.749 36.655-19.717 44.385-40.405 2.378-6.366 4.889-13.085 8.269-19.849 19.336 2.836 27.273-9.688 25.106-27.698l17.802-3.956c7.754-17.262 6.676-21.46 5.392-26.459-.874-3.403-1.844-7.178-.187-15.7 1.059-5.407 8.147-5.639 16.792-5.923 13.267-.435 30.203-.991 34.639-20.556 2.919-12.868-1.293-39.026-5.176-63.145-2.421-15.032-4.713-29.272-5.073-39.007-.128-3.362 2.291-8.871 5.583-16.37z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          id="cara-dch"
+          xmlns="http://www.w3.org/2000/svg"
+          width="323"
+          height="482"
+          fill="none"
+          viewBox="0 0 323 482"
+        >
+          <path
+            fill="#FFD11C"
+            fill-rule="evenodd"
+            d="M199.818 114.137c12.902-15.254 33.743-39.894 70.319-53.311 1.474-.535.06-4.983-1.1-8.634-.402-1.265-.774-2.435-.985-3.313-3.112-16.031 21.66-34.96 55.132-48.684V481.03H114.798c1.094-11.263.549-28.108-14.926-34.429-3.423-1.395-7.071-2.831-10.874-4.328-31.212-12.288-72.799-28.66-84.682-59.67-11.421-29.918 1.683-43.756 17.659-60.628 4.916-5.191 10.104-10.67 14.933-16.993-11.621-16.961-3.456-30.252 14.566-36.533l-4.494-18.652c12.728-15.31 17.193-16.233 22.51-17.331 3.621-.748 7.637-1.577 14.924-7.084 4.62-3.5 1.562-10.306-2.168-18.607-5.723-12.74-13.03-29.001 3.408-42.24 10.81-8.709 37.478-16.825 62.066-24.308 15.325-4.664 29.843-9.082 39.209-13.244 3.236-1.434 7.324-6.267 12.889-12.846z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </section>
+      <section id="intro-section">
+        <img
+          src="./assets/img/fotoPerfil.png"
+          alt="Imagen Perfil Marina Sigler"
+          id="foto-perfil"
+        />
+        <p>
+          Soy Marina Sigler. <br />
+          Ingeniera de producto, diseñadora y desarrolladora front-end.
+        </p>
+        <button
+          type="submit"
+          onclick="window.open('./assets/CVMarinaSigler.pdf')"
+        >
+          Descargar CV
+        </button>
+      </section>
+      <section id="herram-section">
+        <svg
+          id="herram-transition-shape"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1440"
+          height="423"
+          fill="none"
+          viewBox="0 0 1440 423"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#FFD11C"
+            d="M0 422s640 9 1049.5-50.5S1440 0 1440 0v422H0z"
+          />
+        </svg>
+        <svg
+          id="herram-box-shape"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1439"
+          height="347"
+          fill="none"
+          viewBox="0 0 1439 347"
+          preserveAspectRatio="none"
+        >
+          <path fill="#FFD11C" d="M0 0h1440v347H0z" />
+        </svg>
+        <div id="herramientas">
+          <div class="tarjeta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="38"
+              fill="none"
+              viewBox="0 0 48 38"
+            >
+              <mask id="a" fill="#fff">
+                <path
+                  fill-rule="evenodd"
+                  d="M24.508 1.59A1.872 1.872 0 0126.636.02h.002a1.87 1.87 0 011.567 2.13l-5.04 33.306a1.87 1.87 0 11-3.697-.561l5.04-33.306zm-6.38 4.548a1.87 1.87 0 00-2.62-.364L.743 16.94a1.87 1.87 0 000 2.982l14.767 11.166a1.87 1.87 0 002.276-2.966l-.02-.016-12.796-9.675 12.795-9.674a1.87 1.87 0 00.365-2.618l-.001-.001zm11.419 0a1.87 1.87 0 00.363 2.617l12.795 9.675-12.795 9.676a1.87 1.87 0 002.235 2.998l.02-.015 14.767-11.167a1.87 1.87 0 000-2.982L32.165 5.774a1.87 1.87 0 00-2.618.364z"
+                  clip-rule="evenodd"
+                />
+              </mask>
+              <path
+                fill="#252525"
+                fill-rule="evenodd"
+                d="M24.508 1.59A1.872 1.872 0 0126.636.02h.002a1.87 1.87 0 011.567 2.13l-5.04 33.306a1.87 1.87 0 11-3.697-.561l5.04-33.306zm-6.38 4.548a1.87 1.87 0 00-2.62-.364L.743 16.94a1.87 1.87 0 000 2.982l14.767 11.166a1.87 1.87 0 002.276-2.966l-.02-.016-12.796-9.675 12.795-9.674a1.87 1.87 0 00.365-2.618l-.001-.001zm11.419 0a1.87 1.87 0 00.363 2.617l12.795 9.675-12.795 9.676a1.87 1.87 0 002.235 2.998l.02-.015 14.767-11.167a1.87 1.87 0 000-2.982L32.165 5.774a1.87 1.87 0 00-2.618.364z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill="#252525"
+                d="M26.636.02l-.162 1.083.08.012h.082V.02zm-2.128 1.57l-1.081-.166v.002l1.081.163zm2.13-1.57l.164-1.08-.082-.013h-.082V.02zm1.567 2.13l-1.082-.165v.001l1.082.164zm-5.04 33.306l1.081.164-1.081-.164zm-2.13 1.568l.165-1.082-.164 1.082zm-1.567-2.129l1.081.164-1.081-.164zm-3.96-29.121l-.659-.873.66.873zm2.62.364l.874-.658L19 5.478l-.872.66zM.742 16.94l-.66-.873.66.873zm-.363 2.619l.873-.66-.873.66zm.363.363l-.66.872.66-.872zm14.767 11.166l.666-.867-.006-.005-.66.872zm2.621-.345l.868.666-.868-.666zm-.345-2.621l-.67.866.004.002.666-.868zm-.02-.016l-.66.873.008.006.008.006.643-.885zM4.968 18.431l-.66-.872-1.154.872 1.155.873.66-.873zm12.795-9.674l-.66-.872.66.872zm.365-2.618l-.875.657.002.002.873-.66zM29.91 8.755l-.66.872.66-.872zm-.363-2.617l-.873-.66.873.66zM42.705 18.43l.66.873 1.154-.873-1.154-.873-.66.873zM29.91 28.106l.654.878.006-.005-.66-.873zm-.381 2.616l.877-.653-.877.653zm2.616.382l.653.877.007-.005-.66-.872zm.02-.015l-.66-.873.66.872zm14.767-11.167l.66.873-.66-.873zm.363-2.619l-.873.66.873-.66zm-.363-.363l.66-.872-.66.872zM32.165 5.774l-.66.872.66-.872zm-5.367-6.835a2.966 2.966 0 00-3.371 2.485l2.163.33a.778.778 0 01.884-.651l.324-2.164zm-.16-.012h-.002v2.188h.002v-2.188zm2.649 3.387a2.963 2.963 0 00-2.485-3.375l-.329 2.163c.424.065.715.46.65.883l2.164.33zm-5.04 33.305l5.04-33.305-2.164-.328-5.04 33.306 2.163.327zm-3.375 2.486a2.963 2.963 0 003.374-2.485l-2.163-.328a.775.775 0 01-.883.65l-.328 2.163zm-2.486-3.374a2.964 2.964 0 002.486 3.374l.328-2.163a.776.776 0 01-.65-.883l-2.164-.328zm5.04-33.305l-5.04 33.305 2.163.328 5.04-33.306-2.163-.327zm-7.257 5.22a.776.776 0 011.086.152L19 5.478a2.963 2.963 0 00-4.15-.577l1.319 1.746zM1.402 17.814L16.169 6.647 14.849 4.9.082 16.067l1.32 1.746zm-.15 1.086a.775.775 0 01.15-1.086l-1.32-1.745a2.963 2.963 0 00-.576 4.15l1.745-1.32zm.15.15a.771.771 0 01-.15-.15l-1.747 1.32c.166.218.36.412.577.575l1.32-1.744zM16.17 30.217L1.402 19.049l-1.32 1.746L14.849 31.96l1.32-1.745zm1.093-.139a.776.776 0 01-1.087.143l-1.332 1.736a2.964 2.964 0 004.155-.547l-1.736-1.332zm-.143-1.087c.34.26.404.748.143 1.087l1.736 1.332a2.964 2.964 0 00-.547-4.155l-1.332 1.736zm.002.001a.482.482 0 01-.009-.006l.004.003 1.338-1.732-.046-.034-1.287 1.77zM4.31 19.304l12.795 9.675 1.32-1.745-12.796-9.675-1.32 1.745zm12.794-11.42L4.31 17.56l1.32 1.745L18.423 9.63l-1.32-1.745zm.152-1.086a.775.775 0 01-.151 1.087l1.319 1.745a2.963 2.963 0 00.578-4.15l-1.746 1.318zm-.003-.003l.001.001 1.749-1.315-1.75 1.314zM30.57 7.882a.776.776 0 01-.15-1.085l-1.746-1.319a2.964 2.964 0 00.576 4.15l1.32-1.746zm12.795 9.675L30.57 7.882l-1.32 1.745 12.795 9.676 1.32-1.746zM30.57 28.98l12.795-9.676-1.32-1.746-12.795 9.677 1.32 1.745zm-.164 1.09a.776.776 0 01.158-1.085l-1.307-1.755a2.963 2.963 0 00-.606 4.147l1.755-1.307zm1.085.158a.775.775 0 01-1.085-.158l-1.755 1.307a2.963 2.963 0 004.147.605l-1.307-1.754zm.014-.01l-.021.015 1.321 1.744.02-.015-1.32-1.744zm14.767-11.168L31.505 30.216l1.32 1.745 14.767-11.166-1.32-1.746zm.15-1.086a.775.775 0 01-.15 1.087l1.32 1.745a2.964 2.964 0 00.576-4.152l-1.745 1.32zm-.15-.15a.77.77 0 01.15.15l1.747-1.319a2.96 2.96 0 00-.577-.576l-1.32 1.744zM31.505 6.646l14.767 11.166 1.32-1.746L32.825 4.901l-1.32 1.746zm-1.086.15a.775.775 0 011.086-.15l1.32-1.745a2.963 2.963 0 00-4.15.576l1.744 1.32z"
+                mask="url(#a)"
+              />
+            </svg>
+            <h4>Desarrollo</h4>
+            <p>
+              Creación de páginas adaptativas y desarrollo de aplicaciones con
+              Node JS.
+            </p>
+          </div>
+          <div class="tarjeta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="61"
+              height="29"
+              fill="none"
+              viewBox="0 0 61 29"
+            >
+              <path
+                fill="#252525"
+                d="M57.426 0c-1.553 0-2.878 1.07-3.37 2.56H34.075V1.28c0-.707-.533-1.28-1.191-1.28h-4.766c-.658 0-1.191.573-1.191 1.28v1.28H6.944C6.452 1.07 5.127 0 3.574 0 1.604 0 0 1.722 0 3.84c0 2.116 1.603 3.839 3.574 3.839 1.553 0 2.878-1.07 3.37-2.56H18.92c-2.541 1.142-7.748 12.397-8.092 15.46-.562.83-.567 1.263-.143 1.803.236.3.572.455.911.455.271 0 .544-.099.768-.301C18.118 9.083 21.963 6.132 26.925 5.39V6.4c0 .707.534 1.28 1.192 1.28h4.766c.658 0 1.191-.573 1.191-1.28V5.39c4.962.742 10.317 2.395 15.584 17.146.224.202.496.301.767.3.34 0 .676-.154.912-.454.424-.54.25-1.298 0-2.27C49.8 14.13 44.62 6.261 42.079 5.118h11.977c.492 1.49 1.817 2.56 3.37 2.56 1.97 0 3.574-1.723 3.574-3.84S59.397 0 57.426 0zM3.574 5.119c-.657 0-1.191-.574-1.191-1.28 0-.705.534-1.28 1.191-1.28s1.192.575 1.192 1.28c0 .706-.535 1.28-1.192 1.28zm28.117 0H29.31v-2.56h2.382v2.56zm25.735 0c-.657 0-1.192-.574-1.192-1.28 0-.705.535-1.28 1.192-1.28.657 0 1.191.575 1.191 1.28 0 .706-.534 1.28-1.191 1.28z"
+              />
+              <path
+                fill="#252525"
+                fill-rule="evenodd"
+                d="M49.006 22.058c0-.359.27-.65.604-.65h4.444c.334 0 .604.291.604.65v4.865c0 .359-.27.649-.604.649H49.61c-.334 0-.604-.29-.604-.649v-4.865zm4.142 1.946c0-.359-.27-.649-.603-.649h-1.208c-.334 0-.604.29-.604.649V25.3c0 .359.27.649.604.649h1.208c.333 0 .603-.29.603-.649v-1.297zM8.54 23.486c0-.359.271-.65.605-.65h4.444c.334 0 .604.291.604.65v4.865c0 .358-.27.649-.604.649H9.145c-.334 0-.604-.29-.604-.649v-4.865zm4.143 1.946c0-.358-.27-.649-.604-.649h-1.208c-.333 0-.604.29-.604.649v1.297c0 .359.27.65.604.65h1.208c.334 0 .604-.291.604-.65v-1.297z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h4>Diseño</h4>
+            <p>Diseño de páginas web comerciales e imágenes corporativas.</p>
+          </div>
+          <div class="tarjeta">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="42"
+              height="50"
+              fill="none"
+              viewBox="0 0 42 50"
+            >
+              <path
+                fill="#252525"
+                stroke="#252525"
+                d="M40.92 10.679l-.242.438L21.779.7m19.142 9.979L21.778.7m19.142 9.979l-.242.438A1.571 1.571 0 0141.5 12.5v25c0 .282-.076.558-.22.801a1.592 1.592 0 01-.602.582L21.779 49.3a1.612 1.612 0 01-1.556 0l-18.9-10.417a1.593 1.593 0 01-.602-.582A1.571 1.571 0 01.5 37.5v-25s0 0 0 0c0-.282.076-.558.22-.802.144-.243.352-.444.602-.581h0L20.222.7a1.613 1.613 0 011.556 0m19.142 9.979L22.02.262 21.779.7M19.4 24.144v-.296l-.259-.142-14.7-8.102-.741-.409V36.571l.259.143 14.7 8.102.741.408V24.143zm3.459-.441l-.259.142v21.376l.741-.408 14.7-8.099.259-.142V15.194l-.741.409-14.7 8.099zm12.958-10.765l.795-.438-.795-.438-14.576-8.035L21 3.894l-.241.133-14.576 8.035-.795.438.795.438 14.576 8.033.241.134.241-.134 14.576-8.033z"
+              />
+            </svg>
+            <h4>3D</h4>
+            <p>
+              Diseño y modelado de producto y creación de renders de
+              presentación.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="trabajos-section">
+        <h3>Trabajos recientes</h3>
+        <div class="trabajos-container">
+          <article class="mini-trabajo cad">
+            <a href="./html/laseo.html">
+              <img
+                src="./assets/img/miniaturaTrabajo2.png"
+                alt="Trabajo lase-o"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="320"
+                height="132"
+                fill="none"
+                viewBox="0 0 320 132"
+                class="white-decor"
+              >
+                <path
+                  fill="#FCFCFC"
+                  d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="351"
+                height="132"
+                fill="none"
+                viewBox="0 0 351 132"
+                class="yellow-decor"
+              >
+                <path
+                  fill="#FFD11C"
+                  d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"
+                />
+              </svg>
+              <div class="mini-trabajo-nombre">
+                <h4>Lase-o</h4>
+                <p>Diseño y render<br />de producto</p>
+              </div>
+            </a>
+          </article>
+          <article class="mini-trabajo">
+            <a href="./html/cookInARush.html">
+              <img
+                src="./assets/img/miniaturaTrabajo1.png"
+                alt="Trabajo food-blog"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="320"
+                height="132"
+                fill="none"
+                viewBox="0 0 320 132"
+                class="white-decor"
+              >
+                <path
+                  fill="#FCFCFC"
+                  d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="351"
+                height="132"
+                fill="none"
+                viewBox="0 0 351 132"
+                class="yellow-decor"
+              >
+                <path
+                  fill="#FFD11C"
+                  d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"
+                />
+              </svg>
+              <div class="mini-trabajo-nombre">
+                <h4>Cook in a rush</h4>
+                <p>Desarrollo web</p>
+              </div>
+            </a>
+          </article>
+          <article class="mini-trabajo">
+            <a href="./html/etrike.html">
+              <img
+                src="./assets/img/miniaturaTrabajo4.png"
+                alt="Trabajo e-Trike"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="320"
+                height="132"
+                fill="none"
+                viewBox="0 0 320 132"
+                class="white-decor"
+              >
+                <path
+                  fill="#FCFCFC"
+                  d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="351"
+                height="132"
+                fill="none"
+                viewBox="0 0 351 132"
+                class="yellow-decor"
+              >
+                <path
+                  fill="#FFD11C"
+                  d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"
+                />
+              </svg>
+              <div class="mini-trabajo-nombre">
+                <h4>e-Trike</h4>
+                <p>Diseño y render<br />de producto</p>
+              </div>
+            </a>
+          </article>
+          <article class="mini-trabajo">
+            <a href="./fenix.html">
+              <img
+                src="./assets/img/miniaturaTrabajo5.png"
+                alt="Trabajo Fenix"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="320"
+                height="132"
+                fill="none"
+                viewBox="0 0 320 132"
+                class="white-decor"
+              >
+                <path
+                  fill="#FCFCFC"
+                  d="M0 132h253.289a26.001 26.001 0 0024.435-17.115L319.5 0H0v132z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="351"
+                height="132"
+                fill="none"
+                viewBox="0 0 351 132"
+                class="yellow-decor"
+              >
+                <path
+                  fill="#FFD11C"
+                  d="M0 132h267.289a26.001 26.001 0 0024.435-17.115L333.5 0H0v132z"
+                />
+              </svg>
+              <div class="mini-trabajo-nombre">
+                <h4>Fénix</h4>
+                <p>Diseño de marca</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <button><a href="./html/trabajos.html">Todos los trabajos</a></button>
+      </section>
+    </main>
+    <footer>
+      <p>Contacta conmigo!</p>
+      <form
+        action="https://mailthis.to/marinasigler"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input name="_replyto" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <input class="button" type="submit" value="Send" />
+        <input type="hidden" name="_honeypot" value="" />
+        <input type="hidden" name="_confirmation" value="Mensaje enviado" />
+      </form>
+      <div class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/marina-alvarez-de-la-cruz/"
+          title="Link a perfil linkedin"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="55"
+            height="55"
+            fill="none"
+            viewBox="0 0 55 55"
+          >
+            <circle cx="27.5" cy="27.5" r="27.5" fill="#fff" />
+            <path
+              fill="#252525"
+              d="M27.5 0C12.315 0 0 12.315 0 27.5S12.315 55 27.5 55 55 42.685 55 27.5 42.685 0 27.5 0zm-7.991 41.572H12.81v-20.15h6.698v20.15zm-3.349-22.9h-.043c-2.248 0-3.701-1.548-3.701-3.482 0-1.977 1.498-3.481 3.789-3.481 2.29 0 3.7 1.504 3.744 3.482 0 1.933-1.453 3.48-3.789 3.48zm27.499 22.9h-6.697v-10.78c0-2.708-.97-4.556-3.393-4.556-1.85 0-2.952 1.246-3.436 2.45-.177.43-.22 1.032-.22 1.634v11.252h-6.698s.088-18.259 0-20.15h6.697v2.854c.89-1.373 2.483-3.326 6.036-3.326 4.407 0 7.71 2.88 7.71 9.069v11.553z"
+            />
+          </svg>
+        </a>
+        <a href="https://github.com/marinaadlc" title="Link a perfil Github">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="55"
+            height="55"
+            fill="none"
+            viewBox="0 0 55 55"
+          >
+            <g clip-path="url(#clip0)">
+              <circle cx="27.5" cy="28.179" r="27.5" fill="#fff" />
+              <path
+                fill="#252525"
+                d="M27.497.572C12.313.572 0 12.933 0 28.182c0 12.196 7.879 22.543 18.81 26.197 1.375.254 1.877-.598 1.877-1.33 0-.657-.024-2.393-.038-4.696-7.648 1.667-9.264-3.702-9.264-3.702-1.248-3.19-3.053-4.04-3.053-4.04-2.499-1.711.186-1.677.186-1.677 2.76.196 4.211 2.847 4.211 2.847 2.454 4.217 6.439 3 8.006 2.292.248-1.784.96-3 1.746-3.691-6.105-.698-12.526-3.067-12.526-13.644 0-3.015 1.072-5.48 2.832-7.411-.285-.698-1.227-3.507.269-7.305 0 0 2.31-.742 7.562 2.83 2.193-.613 4.545-.919 6.885-.929 2.334.014 4.69.316 6.886.932 5.249-3.572 7.555-2.83 7.555-2.83 1.5 3.802.557 6.607.275 7.305 1.764 1.932 2.826 4.397 2.826 7.412 0 10.604-6.428 12.938-12.554 13.622.987.853 1.867 2.537 1.867 5.112 0 3.692-.035 6.669-.035 7.573 0 .739.495 1.598 1.891 1.327C47.128 50.718 55 40.375 55 28.182 55 12.933 42.687.572 27.497.572z"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path fill="#fff" d="M0 0h55v55H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
